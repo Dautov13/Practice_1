@@ -4,7 +4,7 @@ public class Main {
         myCircle.setRadius(1.0);
         myCircle.getRadius();
         myCircle.getArea();
-        myCircle.getCircumference();
+        myCircle.getPerimeter();
         System.out.println(new StringBuilder("Override toString: ").append(myCircle).toString());
     }
 }
@@ -12,7 +12,7 @@ public class Main {
 class Circle {
     private double radius;
     private double area;
-    private double circumference;
+    private double perimeter;
     final double pi = Math.PI;
 
     Circle(double radius) {
@@ -33,8 +33,8 @@ class Circle {
         System.out.println("The area of the circle is " + area + ".");
     }
 
-    void getCircumference() {
-        circumference = 2 * pi * radius;
+    void getPerimeter() {
+        perimeter = 2 * pi * radius;
         System.out.println("The circumference of the circle is " + circumference + ".");
     }
 
